@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+          <!-- Bootstrap CSS -->
+          <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+          <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+          <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+          <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+          <link rel="stylesheet" href="css/interface.css">
+
+
+        <title>The Guy with good Suggestions</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.png" height="72" width="72"></img></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-television fa-lg"></span> Anime</a></li>
+                      <li class="nav-item"><a class="nav-link" href="./movies.html"><span class="fa fa-film fa-lg"></span> Movies</a></li>
+                      <li class="nav-item"><a class="nav-link" href="./songs.html"><span class="fa fa-music fa-lg"></span> Songs</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                         <a id="login" role="button">
+                             <span class="fa fa-sign-in"></span>Login
+                         </a>
+                    </span>
+                  </div>
+            </div>
+        </nav>
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                       <button type="button" class="close" data-dismiss="modal">
+                           &times;
+                       </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                        <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12 col-sm-7">
+                        <h1>RecommendMe25</h1>
+                        <p>These recommendations come after watching and playing and listening and reviewing the most classic movies,series,anime,games,books and my suggestions are ready to blow your mind away</p>
+                    </div>
+                    <div class="col-12 col-sm-3 align-self-center">
+                        <img src="img/logo.png" class="img-fluid" >
+                    </div>
+                    <div class="col-12 col-sm-2 align-self-center">
+                        
+                        <a class="btn btn-block nav-link btn-danger" role="button" 
+                         id="suggest">Suggest Movies</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="reservationModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reserve a Table</h4>
+                       <button type="button" class="close" data-dismiss="modal">
+                           &times;
+                       </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="firstname" class="col-md-2 col-form-label">Number of Guests</label>
+                                <div class="col-md-10 ">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                            value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                                            value="option4">
+                                        <label class="form-check-label" for="inlineRadio4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
+                                            value="option5">
+                                        <label class="form-check-label" for="inlineRadio5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6"
+                                            value="option6">
+                                        <label class="form-check-label" for="inlineRadio6">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="section" class="col-12 col-md-2 col-form-label">Section</label>
+                                <div class="col-md-10">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-sm btn-success active">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                        </label>
+                                        <label class="btn btn-sm btn-danger">
+                                            <input type="radio" name="options" id="option1" autocomplete="off"> Smoking
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="telnum" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-5 col-md-3">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                    <span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-7 col-md-3">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                    <span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true"></span>
+                                </div>
+                            </div>
+    
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <p> </p>
+            <div class = "col-12 col-sm">
+                <h2>Crazy Good Anime</h2>
+            </div>
+      
+    
+          <br>
+          <br>      
+                <div class="col col-sm order-sm-first col-md">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-tumbnail align-self-center" src="img/fma.png" width = "38%" alt="fma">
+                          <div class="media-body">
+                                <h2 class="mt-0">Fullmetal Alchemist Brotherhood <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">Rank 1</span></h2>
+                                 <p class ="d-none d-sm-block align-items-center">Brothers Edward and Alphonse Elric search for the Philsopher's Stone, hoping to restore their bodies, which were lost when they attempted to use their alchemy skills to resurrect their deceased mother. Edward, who lost only limbs, joins the State Military, which gives him the freedom to continue the search as he tries to restore his brother, whose soul is tethered to earth by a suit of armor. However, Edward and Alphonse are not the only ones seeking the powerful stone. And as they search, they learn of a plot to transmute the entire country for reasons they cannot comprehend.</p>
+                                 <h4>Ratings :</h4>
+                                 <span class="badge badge-pill badge-success">IMDB - 9.1</span> 
+                                 <span class="badge badge-pill badge-warning badge-seconday">Myanimelist - 9.23</span>
+                                 <span class="badge badge-pill badge-danger badge-secondary">Rotten Tomatoes - 100%</span>
+                            </div>
+                         </div>
+                     </div>
+               
+               
+                     <br>
+                     <br> 
+                     <br>
+                     <br> 
+                    
+                    
+                     <div class="col col-sm order-sm-first col-md">
+                        <div class="media">
+                            <img class="d-flex mr-3 img-tumbnail align-self-center" width="38%" src="img/steinsgate.png" alt="steinsgate">
+                              <div class="media-body">
+                                    <h2 class="mt-0">Steins;Gate <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">Rank 2</span></h2>
+                                     <p class ="d-none d-sm-block align-items-center">The self-proclaimed mad scientist Rintarou Okabe rents out a room in a rickety old building in Akihabara, where he indulges himself in his hobby of inventing prospective "future gadgets" with fellow lab members: Mayuri Shiina, his air-headed childhood friend, and Hashida Itaru, a perverted hacker nicknamed "Daru." The three pass the time by tinkering with their most promising contraption yet, a machine dubbed the "Phone Microwave," which performs the strange function of morphing bananas into piles of green gel.
+
+                                        Though miraculous in itself, the phenomenon doesn't provide anything concrete in Okabe's search for a scientific breakthrough; that is, until the lab members are spurred into action by a string of mysterious happenings before stumbling upon an unexpected success—the Phone Microwave can send emails to the past, altering the flow of history.
+                                        
+                                        Adapted from the critically acclaimed visual novel by 5pb. and Nitroplus, Steins;Gate takes Okabe through the depths of scientific theory and practicality. Forced across the diverging threads of past and present, Okabe must shoulder the burdens that come with holding the key to the realm of time.
+                                        </p>
+                                     <h4>Ratings :</h4>
+                                     <span class="badge badge-pill badge-success">IMDB - 8.8</span> 
+                                     <span class="badge badge-pill badge-warning badge-seconday">Myanimelist - 9.13</span>
+                                     <span class="badge badge-pill badge-danger badge-secondary">TV.com - 8.3</span>
+                                </div>
+                             </div>
+                         </div>
+                    
+                 
+                         <br>
+                         <br> 
+                         <br>
+                         <br> 
+                    
+                        <div class="col col-sm order-sm-first col-md">
+                            <div class="media">
+                                <img class="d-flex mr-3 img-tumbnail align-self-center" src="img/hxh.png" width="38%" alt="hxh">
+                                  <div class="media-body">
+                                        <h2 class="mt-0">Hunter x Hunter <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">Rank 3</span></h2>
+                                         <p class ="d-none d-sm-block align-items-center">Hunter x Hunter is set in a world where Hunters exist to perform all manner of dangerous tasks like capturing criminals and bravely searching for lost treasures in uncharted territories. Twelve-year-old Gon Freecss is determined to become the best Hunter possible in hopes of finding his father, who was a Hunter himself and had long ago abandoned his young son. However, Gon soon realizes the path to achieving his goals is far more challenging than he could have ever imagined.
+
+                                            Along the way to becoming an official Hunter, Gon befriends the lively doctor-in-training Leorio, vengeful Kurapika, and rebellious ex-assassin Killua. To attain their own goals and desires, together the four of them take the Hunter Exam, notorious for its low success rate and high probability of death. Throughout their journey, Gon and his friends embark on an adventure that puts them through many hardships and struggles. They will meet a plethora of monsters, creatures, and characters—all while learning what being a Hunter truly means.</p>
+                                         <h4>Ratings :</h4>
+                                         <span class="badge badge-pill badge-success">IMDB - 8.9</span> 
+                                         <span class="badge badge-pill badge-warning badge-seconday">Myanimelist - 9.12</span>
+                                         <span class="badge badge-pill badge-danger badge-secondary">TV.com - 8.3</span>
+                                    </div>
+                                 </div>
+                             </div>
+
+                         <br>
+                         <br> 
+                         <br>
+                         <br> 
+                       
+ <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Anime</a></li>
+                        <li><a href="./movies.html">Movies</a></li>
+                        <li><a href="./songs.html">Songs</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+		              <i class="fa fa-phone fa-lg"></i> : +91 9437576785<br>
+		              <i class="fa fa-fax fa-lg"></i> : +91 8144103814<br>
+		              <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:animeshmohantyblitz@gmail.com">animeshmohantyblitz@gmail.com</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/animesh.mohanty.swagster.1632"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/animesh-mohanty-92a91513b/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright Top 25 by Animesh Mohanty</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+       <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+       <script src="js/scripts.js"></script>
+    </body>
+</html>
